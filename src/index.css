@@ -1,249 +1,43 @@
-header h1 {
-    font-size: 36px;
-    color: black;
-    margin-top: 4em;
-    text-align: center;
-  }
-  
-  header h2 {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 0 100px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+header div {
+    margin-left: auto;
     font-size: 20px;
-    text-align: center;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .index-body {
-      font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-      background-color: white;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-  
-    /* Landing Content */
-  
-    .landing-html, .landing-body {
-      height: 100%;
-    }
-  
-    .bg {
-      background-image: url("../img/factory.jpg");
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  
-    .landing-container {
-      max-width: 500px;
-      margin: auto;
-      background: grey;
-      padding: 10px;
-      text-align: center;
-      border-radius: 7px;
-      border: 2px solid black;
-    }
-  
-    .landing-description {
-      font-size: 20px;
-    }
-  
-    .landing-content {
-      all: revert;
-    }
-  
-    .landing-button {
-      all: revert;
-      margin-top: 2rem;
-      background-color: #8AA323;
-      padding: 24px 36px;
-      font-size: 24px;
-      height: 4rem;
-      border-bottom-right-radius: 5px;
-      border-top-right-radius: 5px;
-      border: 1px solid #000;
-    }
-  
-    a.landing-redirect {
-      all: revert;
-      color: darkgreen;
-      text-decoration: none;
-    }
-  
-    /* End Landing Content */
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    main > div {
-      height: 100%;
-    }
-    
-    main {
-      flex: 1;
-      flex-direction: column;
-    }
-    
-    html {
-      height: 100%;
-    }
-    
-  .card-container {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .card {
-    flex: 0 0 200px;
-    background-color: white;
-    margin: 2rem;
-  }
-  
-  .text {
-    color: black;
-    font-family: sans-serif;
-    background: burlywood;
-  }
-  
-  .card-image {
-    display: flex;
-    width: 100%;
-    height: auto;
-  }
-  
-  .container {
-    flex: 1;
-  }
-  
-  .graph {
-    padding: auto;
-  }
-  
-  /* Navbar Section */
-  nav {
-      position: fixed;
-      padding: .75rem;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #136902;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
+}
+
+header ul li {
     display: inline-block;
-    padding: .6rem;
-    font-size: large;
-  }
-  
-  li {
-    display: inline;
-    margin-right: 1rem;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    padding-top: .5rem;
-    display: inline-block;
-  }
-  
-  .searchBox, button {
-    float: right;
-    padding: .6rem;
-  }
-  
-  input {
-    height: 2.5rem;
-    font-size: 1rem;
-    padding: .5rem;
-    vertical-align: bottom;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: .5px solid #000;
-  }
-  
-  div button {
-    height: 2.5rem;
-    font-size: 1.5rem;
-    padding: .3rem;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    border: .5px solid #000;
-  }
-  
-  a:hover, a:focus, a:active {
-    color: #b7a57a;
-    border-bottom: .3rem solid #b7a57a;
-  }
-  
-  span {
-    padding-left: 1em;
-    padding-right: 1em;
-    position: left;
-  }
-  
-  main {
-    padding-top: 70px;
-  }
-  
-  /* End of NavBar Section */
-  
-  /* Default dizing & media queries */
-  
-  
-  @media (min-width: 769px) {
-    .image img {
-      width: 350px;
-      height: 350px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .image img {
-      width: 400px;
-      height: 400px
-    }
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-  
-  .noShow {
-    display: none;
-  }
-  
-  #myBtnContainer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .bg-green {
-    background-color: #849e8be8;
-    text-align: center;
-  }
+    margin: 0 20px;
+}
+
+#main {
+    margin: 0 120px;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#main .main-text {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+span {
+    border-bottom: 4px solid #0BB04A;
+}
