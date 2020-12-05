@@ -1,11 +1,13 @@
 import React, { Component } from 'react' ;
+import CardSection from './CardSection';
+
 
 class App extends Component {
     render() {
         return (
             <div>
                 <section>
-                        <header>
+                        <header className="splashHeader">
                             Food Print
                             <div>
                                     <ul>
@@ -22,10 +24,11 @@ class App extends Component {
                         Focus on what you eat.
                     </div>
                     <div>
-                        <img src="./images/earth.jpg" width="520" alt="An image of green movement" />
+                        <img className="image" src="./images/earth.jpg" width="520" alt="An image of green movement" />
                     </div>
                 </section>
             </div>
+
         )
     }
 }
