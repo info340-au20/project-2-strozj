@@ -6,7 +6,12 @@ import { RenderCards } from './CardSection.js';
 //import { AddCardForm } from './CardForms.js';
 import { CheckoutPage } from './CartCheckout.js';
 
+/*
+array state variable of an list that allows 
+Have the ids
 
+callback function in app, pass as a prop 
+*/
 
 function App() {
     return (
