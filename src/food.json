@@ -1,0 +1,12 @@
+[
+    {"name":"Beef", "img":"./images/Beef_beef_herd.jpg"},
+    {"name":"Cheese","img":"./images/Cheese.jpg"},
+    {"name":"DarkChocolate", "img":"./images/Dark_Chocolate.jpg"},
+    {"name":"Coffee", "img":"./images/Coffee.jpg"},
+    {"name":"Pork", "img":"./images/Pig_Meat.jpg"},
+    {"name":"Shrimp", "img":"./images/Shrimps_farmed.jpg"},
+    {"name":"Poultry", "img":"./images/Poultry_Meat.jpg"},
+    {"name":"Lamb", "img":"./images/Lamb__Mutton.jpg"},
+    {"name":"PalmOil", "img":"./images/Palm_Oil.jpg"},
+    {"name":"Eggs", "img":"./images/Eggs.jpg"}
+]
