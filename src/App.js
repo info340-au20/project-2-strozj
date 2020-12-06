@@ -7,12 +7,18 @@ import { RenderCards } from './CardSection.js';
 
 
 function App() {
+
+    const eventHandle = (event) =>  {
+         
+    }
+    
+
     return (
         <div>
             <NavBar />
             <Switch>
                 <Route exact path="/"><LandingPage/></Route>
-                <Route path="/explore"><RenderCards/></Route>
+                <Route path="/explore"><RenderCards props={eventHandle}/></Route>
             </Switch>
         </div>
     )

@@ -1,6 +1,14 @@
 import React from 'react';
 
-function RenderCards() {
+function RenderCards(props) {
+
+    const [list, updateList] = useState([]);
+
+    const handleClick = (event) => {
+        updateList(list.concat(event))
+        console.log(list);
+    }
+
     return (
         <div className="card-container">
                 <div className="card meat" id = "Beef_beef_herd">
