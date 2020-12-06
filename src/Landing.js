@@ -1,20 +1,10 @@
-import React, { lazy } from 'react';
+
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function LandingPage() {
     return (
         <div>
-            <section>
-                    <header className="splashHeader">
-                        Food Print
-                        <div>
-                                <ul>
-                                    <li>Home</li>
-                                    <li>About</li>
-                                </ul>
-                        </div>
-                    </header> 
-            </section>
-
             <section id="main">
                 <div className="main-text">
                     You want to <span>reduce</span> the carbon footprint of your food? <br />
@@ -25,7 +15,20 @@ function LandingPage() {
                 </div>
             </section>
         </div>
-    );   
+    );  
 }
 
-export default LandingPage;
+function NavBar() {
+    return (
+        <nav id="navbar">
+            <h1> Food Print </h1>
+            <div>
+                <NavLink className="link" exact to="/" activeClassName="activeLink">Home</NavLink>
+                <NavLink className="link" exact to="/explore" activeClassName="activeLink">Explore</NavLink>
+                <NavLink classname="link" exact to="/cart" activeClassName="activeLink">Cart</NavLink>
+            </div>
+        </nav>  
+    );
+}
+
+export {LandingPage, NavBar};

@@ -1,24 +1,26 @@
-import React, { Component } from 'react' ;
+import React from 'react' ;
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Landing } from './Landing.js';
+import { Route, Switch } from 'react-router-dom'; 
+import {LandingPage, NavBar} from './Landing.js';
+import { RenderCards } from './CardSection.js';
+//import { AddCardForm } from './CardForms.js';
+import { CheckoutPage } from './CartCheckout.js';
 
-import RenderCards from './CardSection';
 
-/*
-// old code
-class App extends Component {
-    render() {
-        return (
-            <p>Hi</p>
-        )
-    }
-}
-*/
 
-function App(props) {
+function App() {
     return (
-    <RenderCards cards={props.cards} />
+        <div>
+            <NavBar />
+            <Switch>
+                <Route exact path="/"><LandingPage/></Route>
+                <Route path="/explore"><RenderCards/></Route>
+                <Route path="/cart"><CheckoutPage/></Route>
+            </Switch>
+            
+        </div>
     )
 }
+// <RenderCards cards={props.cards} />
 
 export default App;

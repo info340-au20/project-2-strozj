@@ -1,11 +1,8 @@
 
-export function AddCardForm() {
-    return (
-        <form>
-            <input 
-                className="form-control mb-3"
-                placeholder=""
-            />
-        </form>
-    )
-}
+// export function AddCardForm() {
+//     return (
+//         <form>
+//             <button className="btn btn-primary">Save</button>
+//         </form>
+//     );
+// }
