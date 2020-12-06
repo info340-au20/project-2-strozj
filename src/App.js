@@ -1,14 +1,17 @@
-import React from 'react' ;
+import React, { useState } from 'react' ;
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Switch } from 'react-router-dom'; 
 import {LandingPage, NavBar} from './Landing.js';
 import { RenderCards } from './CardSection.js';
 //import { AddCardForm } from './CardForms.js';
 import { CheckoutPage } from './CartCheckout.js';
+import { useState } from 'react';
 
 
 
-function App() {
+function App(props) {
+    const [food] = useState(props.foods);
+
     return (
         <div>
             <NavBar />
