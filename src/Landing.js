@@ -25,6 +25,7 @@ function NavBar() {
             <div>
                 <NavLink className="link" exact to="/" activeClassName="activeLink">Home</NavLink>
                 <NavLink className="link" exact to="/explore" activeClassName="activeLink">Explore</NavLink>
+                <NavLink classname="link" exact to="/cart" activeClassName="activeLink">Cart</NavLink>
             </div>
         </nav>  
     );

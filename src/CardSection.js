@@ -12,7 +12,7 @@ function RenderCards(props) {
     return (
         <div className="card-container">
                 <div className="card meat" id = "Beef_beef_herd">
-                    <img className="card-image meat" src="./images/Beef_beef_herd.jpg" alt="raw beef steaks"/>
+                    <img className="card-image meat" src="./images/Beef_beef_herd.jpg" alt="raw beef steaks" id = "beef"/>
                 </div>
                 <div className="card others" id = "Cheese">
                     <img className="card-image others" src="./images/Cheese.jpg" alt="cheese wheels"/>
@@ -42,8 +42,19 @@ function RenderCards(props) {
                 <div className="card others" id = "Eggs">
                     <img className="card-image others" src="./images/Eggs.jpg" alt="eggs in a carton"/>
                 </div>
+            <form>
+                <button className="btn btn-primary">Save</button>
+            </form>
         </div>
     )
 }
+
+// function AddCardForm() {
+//     return (
+//         <form>
+//             <button className="btn btn-primary">Save</button>
+//         </form>
+//     );
+// }
 
 export {RenderCards};
