@@ -1,14 +1,21 @@
-import React, { Component } from 'react' ;
+import React from 'react' ;
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Landing } from './Landing.js';
+import { Route, Switch } from 'react-router-dom'; 
+import {LandingPage, NavBar} from './Landing.js';
+import { RenderCards } from './CardSection.js';
 
 
-class App extends Component {
-    render() {
-        return (
-            <Landing />
-        )
-    }
+
+function App() {
+    return (
+        <div>
+            <NavBar />
+            <Switch>
+                <Route exact path="/"><LandingPage/></Route>
+                <Route path="/explore"><RenderCards/></Route>
+            </Switch>
+        </div>
+    )
 }
 
 export default App;

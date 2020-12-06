@@ -9,22 +9,26 @@ section {
     margin: 0 100px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
-    font-size: 30px;
-    font-weight: 900;
+#navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
-header div {
-    margin-left: auto;
-    font-size: 20px;
+#navbar h1 {
+  margin-left: 1vw;
 }
 
-header ul li {
-    display: inline-block;
-    margin: 0 20px;
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin-right: 1vw;
+}
+
+.activeLink {
+  color:#0BB04A;
 }
 
 #main {
@@ -89,3 +93,7 @@ span {
   height: auto;
 }
 
+.logo {
+  height: 30px;
+  width: auto;
+}

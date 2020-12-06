@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function RenderCards() {
+function RenderCards() {
     return (
         <div className="card-container">
                 <div className="card meat" id = "Beef_beef_herd">
@@ -37,3 +37,5 @@ export default function RenderCards() {
         </div>
     )
 }
+
+export {RenderCards};
