@@ -14,7 +14,7 @@ export function Profile(props) {
             <div class="d-flex">
                 <ul class="mx-auto justify-content-center">
                     {props.items.map(item => {
-                        return <li>{item}</li>;
+                        return <li className="item">{item}</li>;
                     })}
                 </ul>
             </div>
