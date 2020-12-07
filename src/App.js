@@ -4,8 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import {LandingPage, NavBar} from './Landing.js';
 import { CardList } from './CardSection.js';
 //import { AddCardForm } from './CardForms.js';
-import { CheckoutPage } from './CartCheckout.js';
-import { useState } from 'react';
+import { Profile } from './MyPage.js';
 
 function App(props) {
 
@@ -16,6 +15,7 @@ function App(props) {
         console.log(event.target.id);
         setState(state.concat(event.target.id));
     }
+    console.log(state);
 
     return (
         <div>
@@ -23,7 +23,7 @@ function App(props) {
             <Switch>
                 <Route exact path="/"><LandingPage/></Route>
                 <Route path="/explore"><CardList foods={props.foods} callback={handleClick}/></Route>
-                <Route path="/cart"><CheckoutPage/></Route>
+                <Route path="/profile"><Profile items={state}/></Route>
             </Switch>
         </div>
     )
