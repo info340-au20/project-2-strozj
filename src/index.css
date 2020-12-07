@@ -111,3 +111,16 @@ span {
   padding-top: 50px;
   text-align: center;
 }
+
+.checkout {
+  background-color: rgb(75, 70, 117);
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.checkoutList {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
