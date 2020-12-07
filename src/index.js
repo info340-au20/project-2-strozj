@@ -6,11 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 import FOOD from './food.json';
 
-// const SAMPLE_CARDS = [
-//       {name: "beef", landUse: 20, feed: 15.2, farm: 9, process: 31.6, transport: 50.6, package: 0.2, retail: 8},
-//       {name: "cheese", landUse: 2, feed: 5.7, farm: 2, process: 0.6, transport: 1.9, package: 0.2, retail: 4}
-// ];
-
 ReactDOM.render(
   <BrowserRouter>
     <App foods={FOOD} />
