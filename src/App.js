@@ -10,7 +10,6 @@ function App(props) {
 
     const [state, setState] = useState([]);
 
-
     const handleClick = (event) => {
         console.log(event.target.id);
         setState(state.concat(event.target.id));
