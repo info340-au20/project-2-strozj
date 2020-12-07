@@ -14,7 +14,7 @@ export function Profile(props) {
             <div>
                 <ul className="checkoutList">
                     {props.items.map(item => {
-                        return <li className="item">{item}</li>;
+                        return <li key={item} className="item">{item}</li>;
                     })}
                 </ul>
             </div>
