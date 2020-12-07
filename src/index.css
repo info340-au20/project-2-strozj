@@ -17,18 +17,18 @@ section {
 }
 
 #navbar h1 {
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 
 .link {
   text-decoration: none;
   font-size: 20px;
   color: black;
-  margin-right: 1vw;
+  margin-right: 2vw;
 }
 
 .activeLink {
-  color:#0BB04A;
+  color:#769E90;
 }
 
 #main {
@@ -44,7 +44,7 @@ section {
     line-height: 1.5;
 }
 span {
-  border-bottom: 4px solid #0BB04A;
+  border-bottom: 4px solid #769E90;
 }
 
 /* Media query for smaller screens on splash page */
