@@ -31,4 +31,4 @@ function NavBar() {
     );
 }
 
-export {LandingPage, NavBar};
+export { LandingPage, NavBar };

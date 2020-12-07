@@ -93,7 +93,16 @@ span {
   height: auto;
 }
 
+.card-image:hover {
+  box-shadow: 0 0 25px #ccc;
+}
+
 .logo {
   height: 30px;
   width: auto;
+}
+
+.prompt {
+  padding-top: 50px;
+  text-align: center;
 }
