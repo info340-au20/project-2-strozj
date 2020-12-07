@@ -1,13 +1,14 @@
 import React from 'react';
 
+
 export function CheckoutPage() {
     return (
         <div>
-            <section id="main">
-                <div className="main-text">
+            <header id="main">
+                <h1 className="main-text">
                     Here are your Items Checked out:
-                </div>
-            </section>
+                </h1>
+            </header>
         </div>
     );  
 }
