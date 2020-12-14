@@ -6,15 +6,15 @@ export function Profile(props) {
 
     return (
         <div>
-            <div className="text-light bg-dark p-3">
-                <h2 className="text-center">
+            <div className="checkout">
+                <h2 className="checkout">
                     Items Checked out: 
                 </h2>
             </div>
-            <div class="d-flex">
-                <ul class="mx-auto justify-content-center">
+            <div>
+                <ul className="checkoutList">
                     {props.items.map(item => {
-                        return <li>{item}</li>;
+                        return <li key={item} className="item">{item}</li>;
                     })}
                 </ul>
             </div>

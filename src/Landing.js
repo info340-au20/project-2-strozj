@@ -11,7 +11,7 @@ function LandingPage() {
                     Focus on what you eat.
                 </div>
                 <div>
-                    <img className="image" src="./images/earth.jpg" width="520" alt="An image of green movement" />
+                    <img className="image" src="./images/earth.jpg" width="520" alt="green movement" />
                 </div>
             </section>
         </div>
@@ -21,7 +21,7 @@ function LandingPage() {
 function NavBar() {
     return (
         <nav id="navbar">
-            <h1> <img className="logo" src="./images/logo.jpg"/> Food Print </h1>
+            <h1> <img className="logo" src="./images/logo.jpg" alt="float leaf" /> Food Print </h1>
             <div>
                 <NavLink className="link" exact to="/" activeClassName="activeLink">Home</NavLink>
                 <NavLink className="link" exact to="/explore" activeClassName="activeLink">Explore</NavLink>
@@ -31,4 +31,4 @@ function NavBar() {
     );
 }
 
-export {LandingPage, NavBar};
+export { LandingPage, NavBar };

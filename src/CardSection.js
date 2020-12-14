@@ -10,6 +10,12 @@ function Card(props) {
     )
 }
 
+function Prompt() {
+    return (
+        <h2 className="prompt">Click on a product to add it to your profile, select any product which you consume or use in a given day!</h2>
+    )
+}
+
 function CardList(props) {
     return (
         <div className="card-container">
@@ -22,5 +28,4 @@ function CardList(props) {
     )
 }
 
-
-export {CardList};
+export { CardList, Prompt };
