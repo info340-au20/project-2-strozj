@@ -93,7 +93,7 @@ span {
   height: auto;
 }
 
-.card-image:hover {
+.addButton:hover {
   box-shadow: 0 0 25px #ccc;
 }
 

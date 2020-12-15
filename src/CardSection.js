@@ -3,9 +3,9 @@ import React from 'react';
 
 function Card(props) {
     return (
-        <div className="card" id={props.food.name} onClick={props.callback} >
+        <div className="card" id={props.food.name}>
             <img className="card-image" src={props.food.img} alt={props.food.name} id={props.food.name}/>
-            <Button style={{ color: "#769E90"}} size="lg" block>Add</Button>
+            <Button className="addButton" style={{ color: "#769E90"}} id={props.food.name} size="lg" block onClick={props.callback}>Add</Button>
         </div>
     )
 }
