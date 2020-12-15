@@ -18,7 +18,7 @@ function CardList(props) {
     return (
         <div className="card-container">
             {props.foods.map((food) => {
-                return <Card key={food.name} food={food} callback={props.callback}/>
+                return <Card key={food.name} food={food} callback={props.callback} howToHandleClick={props.whatToDoWhenClicked} />
             })}
         </div>
     )
