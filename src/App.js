@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { LandingPage, NavBar } from './Landing.js';
 import { CardList, Prompt } from './CardSection.js';
 import { Profile } from './MyPage.js';
+import { ComputeDay, ComputeWeek, ComputeMonth } from './CarbonComputer.js';
 
 function App(props) {
 
@@ -20,7 +21,11 @@ function App(props) {
             <Switch>
                 <Route exact path="/"><LandingPage/></Route>
                 <Route path="/explore"><Prompt/><CardList foods={props.foods} callback={handleClick}/></Route>
-                <Route path="/profile"><Profile items={state}/></Route>
+                <Route path="/profile"><Profile items={state}/>
+                <ComputeDay items={state} foods={props.foods}/>
+                <ComputeWeek items={state} foods={props.foods}/>
+                <ComputeMonth items={state} foods={props.foods}/>
+                </Route>
             </Switch>
         </div>
     )

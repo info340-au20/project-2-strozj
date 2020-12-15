@@ -2,8 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 export function Profile(props) {
-    console.log(props.items);
-
     return (
         <div>
             <div className="checkout">
