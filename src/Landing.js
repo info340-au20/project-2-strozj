@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavBar } from "./NavBar";
 
+// This function displays the landing page that includes text and an image
 function LandingPage() {
     return (
         <div>
