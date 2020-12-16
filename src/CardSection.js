@@ -10,9 +10,11 @@ function Card(props) {
     )
 }
 
-function Prompt() {
+function Prompt(props) {
     return (
-        <h2 className="prompt">Click on a product to add it to your profile, select any product which you consume or use in a given day!</h2>
+        <h2 className="prompt">
+            Number of items added: { props.clicks }
+        </h2>
     )
 }
 
@@ -20,7 +22,7 @@ function CardList(props) {
     return (
         <div className="card-container">
             {props.foods.map((food) => {
-                return <Card key={food.name} food={food} callback={props.callback}/>
+                return <Card key={food.name} food={food} callback={props.callback} />
             })}
 
             
