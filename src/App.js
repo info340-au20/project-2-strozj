@@ -19,7 +19,8 @@ function App(props) {
             <NavBar />
             <Switch>
                 <Route exact path="/"><LandingPage/></Route>
-                <Route path="/explore"><Prompt/><CardList foods={props.foods} callback={handleClick}/></Route>
+                <Route path="/explore"><Prompt/>
+                <CardList foods={props.foods} callback={handleClick}/></Route>
                 <Route path="/profile"><Profile items={state}/></Route>
             </Switch>
         </div>

@@ -113,7 +113,7 @@ span {
 }
 
 .checkout {
-  background-color: rgb(75, 70, 117);
+  background-color:#468256;
   color: white;
   text-align: center;
   font-size: 50px;
@@ -123,4 +123,8 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+}
+
+#profileButton {
+  text-align: center;
 }
