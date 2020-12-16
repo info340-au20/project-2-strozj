@@ -18,10 +18,11 @@ export function Profile(props) {
                     })}
                 </ul>
             </div>
-            <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={props.callbackDay}> Daily </Button>  &nbsp;&nbsp;&nbsp;
-            <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={props.callbackWeek}> Weekly </Button>  &nbsp;&nbsp;&nbsp;
-            <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={props.callbackMonth}> Monthly </Button> &nbsp;&nbsp;&nbsp;
-            
+            <div id="profileButton">
+                <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={callbackDay}> Daily </Button>  &nbsp;&nbsp;&nbsp;
+                <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={callbackWeekly}> Weekly </Button>  &nbsp;&nbsp;&nbsp;
+                <Button className="addButton" style={{ color: "#769E90"}} size="lg" onClick={callbackMonthly}> Monthly </Button> &nbsp;&nbsp;&nbsp;
+            </div>
         </div>
     );  
 }
