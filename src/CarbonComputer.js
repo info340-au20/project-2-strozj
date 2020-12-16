@@ -12,8 +12,8 @@ function ComputeDay(props) {
     )
     totEmissions = Math.round(totEmissions);
     return (
-        <div>
-            <p>Over the course of a day, your carbon emissions total to about { totEmissions } kg of CO2 per kg of product!</p>
+        <div id="computeDay">
+            <p>Over the course of a day, your carbon emissions total to about <span> { totEmissions }  </span>kg of CO2 per kg of product!</p>
         </div>
     )
 }
@@ -30,8 +30,8 @@ function ComputeWeek(props) {
     )
     totEmissions = Math.round(totEmissions * 7);
     return (
-        <div>
-            <p>Over the course of a week, your carbon emissions total to about { totEmissions } kg of CO2 per kg of product!</p>
+        <div id="computeWeek">
+            <p>Over the course of a week, your carbon emissions total to about <span> { totEmissions } </span> kg of CO2 per kg of product!</p>
         </div>
     )
 }
@@ -48,8 +48,8 @@ function ComputeMonth(props) {
     )
     totEmissions = Math.round(totEmissions * 30);
     return (
-        <div>
-            <p>Over the course of a month, your carbon emissions total to about { totEmissions } kg of CO2 per kg of product!</p>
+        <div id="computeMonth">
+            <p>Over the course of a month, your carbon emissions total to about <span> { totEmissions }  </span> kg of CO2 per kg of product!</p>
         </div>
     )
 }
