@@ -1,16 +1,4 @@
 [
-<<<<<<< HEAD
-    {"id": 1, "name":"Beef", "img":"./images/Beef_beef_herd.jpg", "selected": false},
-    {"id": 2, "name":"Cheese","img":"./images/Cheese.jpg", "selected": false},
-    {"id": 3, "name":"DarkChocolate", "img":"./images/Dark_Chocolate.jpg", "selected": false},
-    {"id": 4, "name":"Coffee", "img":"./images/Coffee.jpg", "selected": false},
-    {"id": 5, "name":"Pork", "img":"./images/Pig_Meat.jpg", "selected": false},
-    {"id": 6, "name":"Shrimp", "img":"./images/Shrimps_farmed.jpg", "selected": false},
-    {"id": 7, "name":"Poultry", "img":"./images/Poultry_Meat.jpg", "selected": false},
-    {"id": 8, "name":"Lamb", "img":"./images/Lamb__Mutton.jpg", "selected": false},
-    {"id": 9, "name":"PalmOil", "img":"./images/Palm_Oil.jpg", "selected": false},
-    {"id": 10, "name":"Eggs", "img":"./images/Eggs.jpg", "selected": false}
-=======
     {"name":"Beef", "img":"./images/Beef_beef_herd.jpg", "selected": false, "totCarbon": 59.6},
     {"name":"Cheese","img":"./images/Cheese.jpg", "selected": false, "totCarbon": 21.2},
     {"name":"Dark Chocolate", "img":"./images/Dark_Chocolate.jpg", "selected": false, "totCarbon": 18.7},
@@ -21,5 +9,4 @@
     {"name":"Lamb", "img":"./images/Lamb__Mutton.jpg", "selected": false, "totCarbon": 24.5},
     {"name":"Palm Oil", "img":"./images/Palm_Oil.jpg", "selected": false, "totCarbon": 7.6},
     {"name":"Eggs", "img":"./images/Eggs.jpg", "selected": false, "totCarbon": 4.5}
->>>>>>> d4c92ec3e6d8a515ced42b3ee0d2147f70ec1cc0
 ]

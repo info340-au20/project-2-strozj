@@ -1,5 +1,5 @@
 import React, { useState } from 'react' ;
-import { Route, Switch } from 'react-router-dom'; 
+import { Route, Switch } from 'react-router-dom';
 import { LandingPage, NavBar } from './Landing.js';
 import { CardList, Prompt } from './CardSection.js';
 import { Profile } from './MyPage.js';
@@ -8,31 +8,13 @@ function App(props) {
 
     const [state, setState] = useState([]);
 
-    const [foods, setFoods] = useState(props.foods);
-
-    // toggles 'selected' property of food with given id
-    const toggleFoodSelected = (foodId) => {
-        let updatedFoodArray = foods.map((eachFood) => {
-            let foodCopy = {...eachFood} // use spread to copy
-            if(foodCopy.id === foodId) {
-                foodCopy.selected = !foodCopy.selected
-            }
-            return foodCopy;
-        })
-        console.log("updated array", updatedFoodArray);
-        setFoods(updatedFoodArray) // set the new state var and re render
-    }
-
-    // let incompleteArray = props.foods.filter((food) => !food.selected);
-    // console.log("Number of items selected", incompleteArray);
-
+    const [clickCount, setClickCount] = useState(0);
 
     const handleClick = (event) => {
         if (!state.includes(event.target.id)) {
+            setClickCount(clickCount + 1)
             setState(state.concat(event.target.id));
-            break;
         }
-        
     }
     
     return (
@@ -40,7 +22,7 @@ function App(props) {
             <NavBar />
             <Switch>
                 <Route exact path="/"><LandingPage/></Route>
-                <Route path="/explore"><Prompt/><CardList foods={props.foods} callback={handleClick} whatToDoWhenClicked={toggleFoodSelected} /></Route>
+                <Route path="/explore"><Prompt clicks={clickCount} /><CardList foods={props.foods} callback={handleClick} /></Route>
                 <Route path="/profile"><Profile items={state}/></Route>
             </Switch>
         </div>
