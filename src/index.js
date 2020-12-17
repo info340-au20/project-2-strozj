@@ -10,6 +10,7 @@ import 'firebase/database'
 
 import FOOD from './food.json';
 
+// firebase configuration settings
 const firebaseConfig = {
   apiKey: "AIzaSyAcj8y3kMWPoRI1uQZSmewWU33s6c5xaY8",
   authDomain: "food-print-724e6.firebaseapp.com",

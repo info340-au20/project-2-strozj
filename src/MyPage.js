@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import { ComputeDay, ComputeWeek, ComputeMonth } from './CarbonComputer.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
 // the function displays the saved information from user input in the explore page
