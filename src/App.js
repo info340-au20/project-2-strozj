@@ -55,14 +55,14 @@ function App(props) {
         if (!state.includes(event.target.id)) {
             setClickCount(clickCount + 1)
             setState(state.concat(event.target.id));
-            const userRef = firebase.database().ref(user.uid);
+            const userObjRef = firebase.database().ref(user.uid).child("items");
             const newStateObj = {
                 state: state.concat(event.target.id),
                 clickCount: clickCount + 1,
                 userID: user.uid,
                 userName: user.displayName
             }
-            userRef.push(newStateObj);
+            userObjRef.set(newStateObj);
         }
     }
 
@@ -98,11 +98,27 @@ function App(props) {
         firebase.auth().onAuthStateChanged((firebaseUser) => {
             if (firebaseUser) {
                 setUser(firebaseUser)
+                const userObjRef = firebase.database().ref(firebaseUser.uid).child("items");
+                userObjRef.on('value', (snapshot) => {
+                    let objectSnapshot = snapshot.val();
+                    if (objectSnapshot) {
+                        console.log(objectSnapshot.clickCount);
+                        console.log(objectSnapshot.state);
+                        console.log(objectSnapshot.clickCount);
+                        setState(objectSnapshot.state);
+                        setClickCount(objectSnapshot.clickCount);
+                    }
+                })
+                return function cleanup() {
+                    userObjRef.off();
+                }
             } else {
                 setUser(null);
+                setState([]);
+                setClickCount(0);
             }
         })
-    })
+    }, []);
 
     // Create day, week, month elements with the updated state toggled.
     // The elements will get rendered in the return
