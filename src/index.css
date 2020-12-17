@@ -151,3 +151,19 @@ div p {
 #computeMonth {
   color: #354f52;
 }
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.logbutton {
+  color: white;
+  position: absolute;
+  right: 50%;
+  background-color:#468256;
+  
+}
