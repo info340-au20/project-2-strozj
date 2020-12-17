@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import FOOD from './food.json';
 
+// pass down the food data into app as props
 ReactDOM.render(
   <BrowserRouter>
     <App foods={FOOD} />

@@ -1,6 +1,7 @@
 import { Button } from 'reactstrap';
 import React from 'react';
 
+// create card component which will contain an image of the food item and add button
 function Card(props) {
     return (
         <div className="card" id={props.food.name}>
@@ -10,6 +11,7 @@ function Card(props) {
     )
 }
 
+// prompt component that will showcase how many food items user added
 function Prompt(props) {
     return (
         <h2 className="prompt">
@@ -18,6 +20,7 @@ function Prompt(props) {
     )
 }
 
+// Card list component that renders all the cards
 function CardList(props) {
     return (
         <div className="card-container">

@@ -8,15 +8,19 @@ import { ComputeDay, ComputeWeek, ComputeMonth } from './CarbonComputer.js';
 
 function App(props) {
 
+    // saves the id of the image cards
     const [state, setState] = useState([]);
+
+    // tracks number of times user clicks
     const [clickCount, setClickCount] = useState(0);
 
+    // sets the state of user input if they want to look at day, week, or month
     const [handleDay, setHandleDay] = useState(false);
-
     const [handleWeek, setHandleWeek] = useState(false);
-
     const [handleMonth, setHandleMonth] = useState(false);
 
+    // increments click by one, once user clicks add button of an image
+    // saves the id of the food item clicked to display in the profile page
     const handleClick = (event) => {
         if (!state.includes(event.target.id)) {
             setClickCount(clickCount + 1)
@@ -24,6 +28,7 @@ function App(props) {
         }
     }
 
+    // toggles the state of the day, used for the button later
     const handleDayToggle = () => {
         if (handleDay) {
             setHandleDay(false);
@@ -32,6 +37,7 @@ function App(props) {
         }
     }
 
+    // toggles the state of the week, used for the button later
     const handleWeekToggle = () => {
         if (handleWeek) {
             setHandleWeek(false);
@@ -40,6 +46,7 @@ function App(props) {
         }
     }
 
+    // toggles the state of the month, used for the button later
     const handleMonthToggle = () => {
         if (handleMonth) {
             setHandleMonth(false);
@@ -48,6 +55,8 @@ function App(props) {
         }
     }
 
+    // Create day, week, month elements with the updated state toggled.
+    // The elements will get rendered in the return
     let dayComponent;
     let weekComponent;
     let monthComponent;
@@ -65,8 +74,13 @@ function App(props) {
         <div>
             <NavBar />
             <Switch>
+                {/* landing page */}
                 <Route exact path="/"><LandingPage/></Route>
+
+                {/* Explore page contains a prompt component variable and a cardlist for user to interact with */}
                 <Route path="/explore"><Prompt clicks={clickCount}/><CardList foods={props.foods} callback={handleClick}/></Route>
+                
+                {/* render the updated component variables in the user profile page */}
                 <Route path="/profile"><Profile items={state} foods={props.foods} callbackDay={handleDayToggle} callbackMonth={handleMonthToggle} callbackWeek={handleWeekToggle}/>
                 {dayComponent}
                 {weekComponent}
