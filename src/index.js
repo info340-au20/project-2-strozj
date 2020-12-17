@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'; 
+import firebase from 'firebase';
 
 import FOOD from './food.json';
 
-// pass down the food data into app as props
+const firebaseConfig = {
+  apiKey: "AIzaSyAcj8y3kMWPoRI1uQZSmewWU33s6c5xaY8",
+  authDomain: "food-print-724e6.firebaseapp.com",
+  projectId: "food-print-724e6",
+  storageBucket: "food-print-724e6.appspot.com",
+  messagingSenderId: "1035916557929",
+  appId: "1:1035916557929:web:78dc06624e98b49fec6cf8",
+  measurementId: "G-724122JF9E"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 ReactDOM.render(
   <BrowserRouter>
     <App foods={FOOD} />
